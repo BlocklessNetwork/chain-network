@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cosmos/chain-registry/master/chain.schema.json",
+  "chain_name": "bls",
+  "status": "live",
+  "network_type": "edgenet",
+  "pretty_name": "Blockless",
+  "chain_id": "bls-1",
+  "bech32_prefix": "bls",
+  "daemon_name": "bls",
+  "node_home": "$HOME/.bls",
+  "genesis": {
+    "genesis_url": "https://raw.githubusercontent.com/txlabs/blockless-chain-net/main/edgenet/genesis.json"
+  },
+  "slip44": 118,
+  "codebase": {
+    "git_repo": "https://github.com/txlabs/blockless-chain",
+    "recommended_version": "latest",
+    "compatible_versions": ["latest"],
+    "binaries": {}
+  },
+  "peers": {
+    "seeds": [],
+    "persistent_peers": []
+  },
+  "apis": {
+    "rpc": [],
+    "rest": [],
+    "grpc": []
+  },
+  "explorers": []
+}
