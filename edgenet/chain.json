@@ -3,11 +3,11 @@
   "chain_name": "bls",
   "status": "live",
   "network_type": "edgenet",
-  "pretty_name": "Blockless",
-  "chain_id": "bls-1",
+  "pretty_name": "Blockless Network",
+  "chain_id": "bls-edgenet-1",
   "bech32_prefix": "bls",
-  "daemon_name": "bls",
-  "node_home": "$HOME/.bls",
+  "daemon_name": "blsd",
+  "node_home": "$HOME/.blsd",
   "genesis": {
     "genesis_url": "https://raw.githubusercontent.com/txlabs/blockless-chain-net/main/edgenet/genesis.json"
   },
@@ -15,7 +15,9 @@
   "codebase": {
     "git_repo": "https://github.com/txlabs/blockless-chain",
     "recommended_version": "latest",
-    "compatible_versions": ["latest"],
+    "compatible_versions": [
+      "latest"
+    ],
     "binaries": {}
   },
   "peers": {
@@ -23,7 +25,9 @@
     "persistent_peers": []
   },
   "apis": {
-    "rpc": [],
+    "rpc": [
+      "https://edgenet.bls.dev:443"
+    ],
     "rest": [],
     "grpc": []
   },
